@@ -1,0 +1,105 @@
+*{ 
+  margin: 10px;
+  padding: 10px;
+  box-sizing: border-box;
+  
+}
+
+.padre{
+  display: flex;
+  flex-flow: column nowrap;
+  max-width: 1200px;
+  margin: 10px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+  .header {
+    background: #000;
+    display: flex;
+    flex-flow: column nowrap;
+
+  }
+    .menu {
+      background: gray;
+      display: flex;
+      flex-flow: row nowrap;
+      
+    }
+      .logo {
+        background: red;
+        flex: 1 1 auto;
+      }
+      .nav {
+        background: red;
+        flex: 5 1 auto;
+      }
+      .social {
+        background: red;
+        flex: 1 1 auto;
+      }
+
+    .texto-principal {
+      background: orange;
+    }
+      h1 {
+        background: yellow;
+      }
+
+  .section {
+  background: #000;
+  display: flex;
+  }
+    .articulos {
+      background: purple;
+      flex: 2 1 auto;
+      display: flex;
+      flex-flow: row wrap;
+    }
+      .article {
+        background: blue;
+        flex: 1 1 40%;
+      }
+      .navegacion {
+        background: lightblue;
+        flex: 1 1 100%;
+      }
+
+    .aside {
+      background: pink;
+      flex: 1 1 auto;
+    }
+      .publicidad {
+        background: yellow;
+      }
+
+  .footer {
+    background: #000;
+  }
+    .pie {
+      background: white;
+    }
+  
+    @media  all and (max-width: 800px){
+      
+      .section {
+        flex-direction: column;
+        }
+
+    }
+    @media all and (max-width: 600px){
+      
+      .articulos{
+        flex-direction: column;
+        
+        
+      }
+      
+    }
+    @media all and (max-width: 400px){
+      .menu{
+        flex-direction: column
+      }
+
+    }
+      
